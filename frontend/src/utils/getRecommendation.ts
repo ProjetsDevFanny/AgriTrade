@@ -1,13 +1,13 @@
-import type { Product } from '../types/Product';
+import type { Product } from "../types/Product";
 
-export function getRecommendation(products: Product[]): Product | null {
-  const availableProducts = products.filter((product) => product.inStock);
-
-  if (availableProducts.length === 0) {
-    return null;
+export function getRecommendation(product: Product): string {
+  if (product.currentPrice <= product.buyThreshold) {
+    return "Acheter";
   }
 
-  return availableProducts.reduce((best, current) =>
-    current.price < best.price ? current : best
-  );
+  if (product.currentPrice >= product.sellThreshold) {
+    return "Vendre";
+  }
+
+  return "Attendre";
 }
