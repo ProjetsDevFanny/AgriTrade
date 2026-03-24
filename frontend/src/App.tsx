@@ -1,27 +1,21 @@
-import ProductCard from './components/ProductCard';
-import { products } from './data/products';
-import { getRecommendation } from './utils/getRecommendation';
+/**
+ * @file App.jsx
+ * @description Composant racine de l'application qui initialise le RouterProvider pour gérer le routage.
+ * @author Simon Fanny
+ * @date 24/03/2026
+ * @project Agritrade - Projet personnel
+ *
+ * ===============================================================================
+ */
 
+import { RouterProvider } from 'react-router-dom'
+import { AppRouter } from './router'
+import './styles/main.scss'
+    
 function App() {
-  const recommendedProduct = getRecommendation(products);
-
   return (
-    <main style={{ maxWidth: '560px', margin: '32px auto', fontFamily: 'sans-serif' }}>
-      <h1>AgriTrade 🌾</h1>
-
-      {recommendedProduct && (
-        <>
-          <h2 style={{ marginBottom: '8px' }}>Recommandation du jour</h2>
-          <ProductCard product={recommendedProduct} highlighted />
-        </>
-      )}
-
-      <h2 style={{ marginTop: '20px' }}>Catalogue</h2>
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
-    </main>
-  );
+    <RouterProvider router={AppRouter} />
+  )
 }
 
-export default App;
+export default App
