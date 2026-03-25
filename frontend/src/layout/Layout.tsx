@@ -11,11 +11,9 @@
 
 import { Outlet } from 'react-router-dom';
 // import { useEffect } from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import { Outlet } from "react-router-dom";
-
-import './layoutStyle.scss'
+import Header from './header/Header';
+import Footer from './footer/Footer';
+import './layout.scss'
 
 function Layout() {
  

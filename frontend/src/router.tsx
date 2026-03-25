@@ -8,16 +8,16 @@
  * ===============================================================================
  */
 
-import { createBrowserRouter } from 'react-router-dom'
-import Layout from './layout/layout.tsx'
-import Index from '../pages/home/Home.tsx'
+import { createBrowserRouter } from 'react-router-dom';
+import Layout from './layout/Layout.tsx';
+import Home from './pages/home/Home.tsx';
 
 export const AppRouter = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { index: true, element: <Index /> },
+      { index: true, element: <Home/> },
     ]
   }
 ]);
