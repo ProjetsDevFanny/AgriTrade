@@ -16,7 +16,6 @@ import "./home.scss";
 function Home() {
   return (
     <div className="home">
-      <h1>Home</h1>
       <div className="home__products">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
