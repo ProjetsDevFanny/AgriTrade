@@ -10,5 +10,9 @@ export type Product = {
   currentPrice: number;
   buyThreshold: number;
   sellThreshold: number;
+  change1M: number;
+  change6M: number;
+  change1Y: number;
+  trend: "hausse" | "baisse" | "stable";
   unit: string;
 };

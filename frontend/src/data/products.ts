@@ -1,94 +1,134 @@
 import type { Product } from '../types/Product';
 
 export const products: Product[] = [
-  {
-    id: 1,
-    name: "Blé tendre",
-    category: "Céréales",
-    currentPrice: 230,
-    buyThreshold: 190,
-    sellThreshold: 225,
-    unit: "€/tonne"
-  },
-  {
-    id: 2,
-    name: "Blé dur",
-    category: "Céréales",
-    currentPrice: 260,
-    buyThreshold: 220,
-    sellThreshold: 255,
-    unit: "€/tonne"
-  },
-  {
-    id: 3,
-    name: "Maïs",
-    category: "Céréales",
-    currentPrice: 210,
-    buyThreshold: 180,
-    sellThreshold: 205,
-    unit: "€/tonne"
-  },
-  {
-    id: 4,
-    name: "Colza",
-    category: "Oléagineux",
-    currentPrice: 480,
-    buyThreshold: 440,
-    sellThreshold: 470,
-    unit: "€/tonne"
-  },
-  {
-    id: 5,
-    name: "Tournesol classique",
-    category: "Oléagineux",
-    currentPrice: 450,
-    buyThreshold: 410,
-    sellThreshold: 440,
-    unit: "€/tonne"
-  },
-  {
-    id: 6,
-    name: "Orge brassicole de printemps",
-    category: "Céréales",
-    currentPrice: 240,
-    buyThreshold: 200,
-    sellThreshold: 235,
-    unit: "€/tonne"
-  },
-  {
-    id: 7,
-    name: "Orge fourragère",
-    category: "Céréales",
-    currentPrice: 220,
-    buyThreshold: 185,
-    sellThreshold: 215,
-    unit: "€/tonne"
-  },
-  {
-    id: 8,
-    name: "Pois",
-    category: "Protéagineux",
-    currentPrice: 260,
-    buyThreshold: 220,
-    sellThreshold: 250,
-    unit: "€/tonne"
-  },
-  {
-    id: 9,
-    name: "Soja",
-    category: "Protéagineux",
-    currentPrice: 500,
-    buyThreshold: 450,
-    sellThreshold: 490,
-    unit: "€/tonne"
-  },
-  {
-    id: 10,
-    name: "Féverole",
-    category: "Protéagineux",
-    currentPrice: 240,
-    buyThreshold: 200,
-    sellThreshold: 235,
-    unit: "€/tonne"
-  },
-];
+    {
+      id: 1,
+      name: "Blé tendre",
+      category: "Céréales",
+      currentPrice: 230,
+      buyThreshold: 190,
+      sellThreshold: 225,
+      change1M: 1.2,
+      change6M: -2.1,
+      change1Y: 7.8,
+      trend: "hausse",
+      unit: "€/tonne"
+    },
+    {
+      id: 2,
+      name: "Blé dur",
+      category: "Céréales",
+      currentPrice: 260,
+      buyThreshold: 220,
+      sellThreshold: 255,
+      change1M: -0.8,
+      change6M: -3.5,
+      change1Y: 4.2,
+      trend: "baisse",
+      unit: "€/tonne"
+    },
+    {
+      id: 3,
+      name: "Maïs",
+      category: "Céréales",
+      currentPrice: 210,
+      buyThreshold: 180,
+      sellThreshold: 205,
+      change1M: 0.5,
+      change6M: 2.8,
+      change1Y: 9.6,
+      trend: "hausse",
+      unit: "€/tonne"
+    },
+    {
+      id: 4,
+      name: "Colza",
+      category: "Oléagineux",
+      currentPrice: 480,
+      buyThreshold: 440,
+      sellThreshold: 470,
+      change1M: -2.4,
+      change6M: 5.2,
+      change1Y: 12.7,
+      trend: "hausse",
+      unit: "€/tonne"
+    },
+    {
+      id: 5,
+      name: "Tournesol classique",
+      category: "Oléagineux",
+      currentPrice: 450,
+      buyThreshold: 410,
+      sellThreshold: 440,
+      change1M: -1.5,
+      change6M: 3.9,
+      change1Y: 10.3,
+      trend: "hausse",
+      unit: "€/tonne"
+    },
+    {
+      id: 6,
+      name: "Orge brassicole de printemps",
+      category: "Céréales",
+      currentPrice: 240,
+      buyThreshold: 200,
+      sellThreshold: 235,
+      change1M: 0.9,
+      change6M: -1.2,
+      change1Y: 6.5,
+      trend: "hausse",
+      unit: "€/tonne"
+    },
+    {
+      id: 7,
+      name: "Orge fourragère",
+      category: "Céréales",
+      currentPrice: 220,
+      buyThreshold: 185,
+      sellThreshold: 215,
+      change1M: -0.6,
+      change6M: -2.8,
+      change1Y: 3.4,
+      trend: "baisse",
+      unit: "€/tonne"
+    },
+    {
+      id: 8,
+      name: "Pois",
+      category: "Protéagineux",
+      currentPrice: 260,
+      buyThreshold: 220,
+      sellThreshold: 250,
+      change1M: 1.8,
+      change6M: 4.1,
+      change1Y: 11.2,
+      trend: "hausse",
+      unit: "€/tonne"
+    },
+    {
+      id: 9,
+      name: "Soja",
+      category: "Protéagineux",
+      currentPrice: 500,
+      buyThreshold: 450,
+      sellThreshold: 490,
+      change1M: -3.2,
+      change6M: 2.5,
+      change1Y: 14.8,
+      trend: "baisse",
+      unit: "€/tonne"
+    },
+    {
+      id: 10,
+      name: "Féverole",
+      category: "Protéagineux",
+      currentPrice: 240,
+      buyThreshold: 200,
+      sellThreshold: 235,
+      change1M: 0.3,
+      change6M: -1.7,
+      change1Y: 5.6,
+      trend: "hausse",
+      unit: "€/tonne"
+    }
+  ];

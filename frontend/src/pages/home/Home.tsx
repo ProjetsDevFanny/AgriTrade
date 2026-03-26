@@ -8,21 +8,22 @@
  * ===============================================================================
  */
 
-// import { Link } from "react-router-dom";
-import { products } from "../../data/products";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import Table from "../../components/Table/Table";
 import "./home.scss";
 
 function Home() {
   return (
-    <div className="home">
-      <div className="home__products">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
-    </div>
-  )
+    <main className="home">
+      <section className="home__dashboard">
+        <h1 className="home__title">Agritrade</h1>
+        <p className="home__subtitle">
+          Suivez les prix agricoles et les tendances du marché
+        </p>
+
+        <Table />
+      </section>
+    </main>
+  );
 }
 
 export default Home;
