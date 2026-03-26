@@ -1,12 +1,13 @@
 import { products } from "../../data/products";
 import TableLine from "./TableLine";
+import "./table.scss";
 
 function Table() {
   const tableHeader = [
     "Prix actuel",
-    "1Mois",
-    "6Mois",
-    "1An",
+    "Dans 1 mois",
+    "Dans 6 mois",
+    "Dans 1 an",
     "Tendance",
     "Recommandation",
   ];
