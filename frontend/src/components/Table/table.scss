@@ -5,27 +5,19 @@
 .table-container {
   text-align: center;
   color: $white1 !important;
+  margin: 100px 0;
 
   .table-header,
   .table-line {
     display: grid;
-    grid-template-columns: 350px 100px 100px 120px repeat(7, 1fr);
+    grid-template-columns: 50px 20px 220px 160px 120px repeat(6, 1fr) 150px;
 
     @media screen and (max-width: 1020px) {
-      grid-template-columns: 300px 80px 80px 100px repeat(7, 1fr);
-    }
-    @media screen and (max-width: 850px) {
-      grid-template-columns: 300px 80px 80px 100px repeat(4, 1fr);
-    }
-    @media screen and (max-width: 715px) {
-      grid-template-columns: 250px 80px repeat(4, 1fr);
-    }
-    @media screen and (max-width: 540px) {
-      grid-template-columns: 200px 80px repeat(4, 1fr);
+      grid-template-columns: 50px 200px 180px 80px 80px 80px 80px 80px 80px 1fr;
     }
   }
   .table-header {
-    height: 44px;
+    height: 50px;
     align-items: center;
     width: 100%;
     z-index: 100000;
@@ -179,6 +171,17 @@
     &:hover {
       background: rgba(128, 128, 128, 0.25);
     }
+
+    li:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        object-fit: cover;
+        height: 20px;
+      }
+    }
     .infos-container {
       display: grid;
       grid-template-columns: 25px 22px 32px 1fr;
@@ -204,16 +207,7 @@
         margin-left: 4px;
       }
 
-      .img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-          object-fit: cover;
-          height: 15px;
-        }
-      }
+      
       .infos {
         height: 100%;
         width: 80%;

@@ -6,7 +6,11 @@ export type Category =
 export type Product = {
   id: number;
   name: string;
+  icon: string;
   category: Category;
+  referenceMarket: string;
+  lastCotation: string;
+  tax: number;
   currentPrice: number;
   buyThreshold: number;
   sellThreshold: number;

@@ -4,10 +4,13 @@ import "./table.scss";
 
 function Table() {
   const tableHeader = [
-    "Prix actuel",
-    "Dans 1 mois",
-    "Dans 6 mois",
-    "Dans 1 an",
+    "Marché de référence",
+    "Dernière cotation",
+    "Prix moyen",
+    "Taxe",
+    "1 mois",
+    "6 mois",
+    "1 an",
     "Tendance",
     "Recommandation",
   ];
@@ -15,8 +18,9 @@ function Table() {
   return (
     <div className="table-container">
       <ul className="table-header">
+        <li>N °</li>
+        <li></li>
         <li>Produit</li>
-        <li>Catégorie</li>
         {tableHeader.map((item) => (
           <li key={item}>{item}</li>
         ))}
